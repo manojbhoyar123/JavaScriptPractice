@@ -8,7 +8,9 @@ bmiJohn = (johnMass/(johnHeight*johnHeight));
 bmiMark = (markMass/(markHeight*markHeight));
 
 isMarksBmiHigher = bmiMark > bmiJohn;
-console.log("is mark's BMI higher than john",isMarksBmiHigher);
+console.log(bmiJohn,bmiMark)
+console.log("is mark's BMI higher than john:- " + isMarksBmiHigher);
+alert("is mark's BMI higher than john:- ", isMarksBmiHigher);
 
 
 
