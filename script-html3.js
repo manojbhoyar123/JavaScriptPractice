@@ -48,17 +48,19 @@ age1 = 11;
 age1 >= 18 ? console.log(firstName + " can drink bear:- "): console.log(firstName + " can drink juice: -")
 drink = (age1 >= 18 ? "beer" : "Juice");
 console.log(drink);
-job = "teacher";
+job = "AB";
 switch(job)
 {
     case "teacher":
+    case "teacher1":
         console.log(firstName + " likes teaching ");
         break;
-}
+
     case "coder":
-    {
         console.log(firstName + " likes coding " );
         break;
-    }
+    default:
+        console.log(" something else:-");
+}
     
 
