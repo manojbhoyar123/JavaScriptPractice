@@ -53,10 +53,12 @@ switch(job)
 {
     case "teacher":
         console.log(firstName + " likes teaching ");
+        break;
 }
-    case "coder";
+    case "coder":
     {
         console.log(firstName + " likes coding " );
+        break;
     }
-
+    
 
