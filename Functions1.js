@@ -3,15 +3,23 @@ function calcAge(birthyear)
     return (2019 - birthyear);
 }
 var ageOfManoj = calcAge(1983);
-console.log(ageOfManoj);
+console.log("Current Age Of Manoj is:-", ageOfManoj);
 
 function calcRetAgeRemained(year , firstName)
 {
     var retAge = (65 - calcAge(year));
-    console.log(firstName + " retires in " + retAge);
+    if (retAge >= 0)
+    {
+        console.log(firstName + "'s pending years for retirement are: " + retAge);
+    }
+    else
+    {
+        console.log(firstName + " is already retired ");
+    }
+    
 }
 calcRetAgeRemained(1983, 'Manoj');
-
+calcRetAgeRemained(1979, 'Karale');
 
 
 
