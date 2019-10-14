@@ -22,7 +22,7 @@ calcRetAgeRemained(1983, 'Manoj');
 calcRetAgeRemained(1979, 'Karale');
 calcRetAgeRemained(1983, 'Rohini');
 calcRetAgeRemained(1986, 'Rishi');
-calcRetAgeRemained(1986, 'Rishi');
+
 
 
 
