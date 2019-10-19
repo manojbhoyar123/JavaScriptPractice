@@ -12,3 +12,4 @@ secnd=21;
 thrd=frst > secnd;
 console.log(frst > secnd);
 console.log(typeof thrd );
+
