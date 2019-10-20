@@ -15,7 +15,7 @@ function tipcalc(bill)
     }
     return (prct * bill);
 }
-var bill = [124, 48, 268];
+var bill = [125, 40, 270];
 var tips = [tipcalc(bill[0]), tipcalc(bill[1]), tipcalc(bill[2])];
 var finalBill = [bill[0] + tips[0], bill[1] + tips[1] ,bill[2] + tips[2]];
-console.log("final bill paid:- ",finalBill);
+console.log(tips,finalBill);
