@@ -1,4 +1,4 @@
-/*
+
 var name = ["abc","qwe","w345","manoj1"];
 var year = [1983,1984,1985];
 var smplus = ("names are when + added:-" + name);
@@ -13,7 +13,7 @@ name[0] = "Gopal";
 name[name.length] = "madhav";
 console.log("After re-initializting:-  " +name);
 console.log(name.length);
-*/
+
 // content modification fucntions
 var johnD = ['john',"Smith", 'teacher' ,1993,false];
 console.log("org:-" ,johnD);
