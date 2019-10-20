@@ -6,4 +6,4 @@ console.log(smplus);
 console.log(smcomma);
 console.log(typeof(smplus));
 console.log(typeof(smcomma));
-
+console.log(year[0],year[1],year[2]);
