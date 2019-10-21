@@ -1,3 +1,4 @@
+// object literals
 var johnFm={
     name: 'john',
     surname: 'smith',
@@ -13,3 +14,11 @@ console.log("surname is:- ", johnFm['surname']);  //retrive by key in string for
 johnFm.job = "SWCoder";
 console.log(johnFm);
 
+// creating and inserting records in object
+var janeFm = new Object();
+janeFm.name = 'Jane';
+janeFm.birthyear = 1984;
+janeFm.job = "SWManager";
+janeFm['lastName'] = 'Gawande';
+
+console.log(janeFm);
