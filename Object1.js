@@ -5,3 +5,8 @@ var student={
   rollno:12};
 console.log(Object.keys(student));
 console.log(Object.values(student));
+var ka = Object.keys(student.name);
+
+console.log(ka);
+console.log(typeof(ka));
+
