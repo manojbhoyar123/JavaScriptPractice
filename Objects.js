@@ -22,3 +22,5 @@ janeFm.job = "SWManager";
 janeFm['lastName'] = 'Gawande';
 
 console.log(janeFm);
+janeFm.name ='Jane1';
+console.log("after modifying value within object:-",janeFm);
