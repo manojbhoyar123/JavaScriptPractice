@@ -1,5 +1,6 @@
 var i = 0;
 var j = 0;
+var k = 0;
 for (i; i <= 20; i+=5)
 {
     console.log(i);
@@ -10,9 +11,10 @@ for (j; j < johnA.length; j++)
     console.log(johnA[j]);
 }
 
-while (j < johnA.length)
+while (k < johnA.length)
 {
-    console.log(johnA[j]);
+    console.log(johnA[k]);
+    k = k+1;
 }
 
 
