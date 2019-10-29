@@ -10,12 +10,14 @@ for (j; j < johnA.length; j++)
 {
     console.log(johnA[j]);
 }
-
+/*
 while (k < johnA.length)
 {
     console.log(johnA[k]);
     k = k+1;
-}
+} 
+*/
+
 
 
 
