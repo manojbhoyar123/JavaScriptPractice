@@ -35,7 +35,3 @@ for (m; k< johnA.length ; m++)
         
     }
 }
-
-
-
-
