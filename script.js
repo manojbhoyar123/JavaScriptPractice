@@ -12,3 +12,5 @@ secnd=21;
 thrd=frst > secnd;
 console.log(frst > secnd);
 console.log(typeof thrd );
+console.log(typeof age);
+console.log(typeof "Sarvadnya is GOD's gift");
