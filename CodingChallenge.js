@@ -24,3 +24,4 @@ var john = {
 //console.log(john.calcTips()); this will give undefined
 john.calcTips();
 console.log(john);
+
