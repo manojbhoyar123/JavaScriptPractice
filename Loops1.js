@@ -27,7 +27,3 @@ for (m; m< johnA.length ; m++){
         console.log(johnA[m]);
     }
 }
-
-
-
-
