@@ -1,4 +1,3 @@
-//console.log(this);
 var john ={          //object starts with keyword var
 name:'John',
 yearOfBirth:1983,
@@ -15,12 +14,3 @@ calcAge: function()      //function declaration must have enclosed brackets.
     }
 };
 john.calcAge();
-
-var mike = {
-    name: 'mike',
-    yearOfBirth: 1989 
-};
-
-// function borrowing
-mike.calcAge = john.calcAge; 
-console.log(mike.calcAge());
