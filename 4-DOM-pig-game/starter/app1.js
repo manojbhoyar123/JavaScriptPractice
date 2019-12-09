@@ -12,6 +12,8 @@ dice = Math.floor(Math.random() * 6) + 1;
 //textContent always needs text.
 //document.querySelector('#current-0').textContent = dice;  //this is basic methodbundleRenderer.renderToStream
 document.querySelector('#current-' + activePlayer).textContent = dice; //JS convert this to current-0 or current-1
+//document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>'; //inner html needs string
+
 
 
 
