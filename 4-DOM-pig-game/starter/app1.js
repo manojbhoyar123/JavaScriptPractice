@@ -1,4 +1,4 @@
-var scores , roundScore , activePlayer , dice , dice2;
+var scores , roundScore , activePlayer , dice , dice2 , x;
 scores = [0,0];
 roundScore = 0;
 activePlayer = 0;
@@ -14,7 +14,7 @@ dice = Math.floor(Math.random() * 6) + 1;
 document.querySelector('#current-' + activePlayer).textContent = dice; //JS convert this to current-0 or current-1
 //document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>'; //inner html needs string
 
-
-
+var x = document.querySelector('#score-0').textContent;
+console.log(x);
 
 
