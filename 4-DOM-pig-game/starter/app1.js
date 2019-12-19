@@ -11,10 +11,12 @@ dice = Math.floor(Math.random() * 6) + 1;
 //document.querySelector('#current-0').textContent = getDiceValue(); //always select first element in DOC. Not working as function
 //textContent always needs text.
 //document.querySelector('#current-0').textContent = dice;  //this is basic methodbundleRenderer.renderToStream
-document.querySelector('#current-' + activePlayer).textContent = dice; //JS convert this to current-0 or current-1
+document.querySelector('#current-' + activePlayer).textContent = dice; //*SETTER since we set value*//JS convert this to current-0 or current-1
 //document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>'; //inner html needs string
 
-var x = document.querySelector('#score-0').textContent;
+x = document.querySelector('#score-0').textContent; //*GETTER* since we get the value
 console.log(x);
+
+document.querySelector('.dice').style.display = 'none';
 
 
