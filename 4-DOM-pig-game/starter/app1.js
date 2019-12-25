@@ -28,9 +28,13 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     // 1. Random number
     dice = Math.floor(Math.random() * 6) + 1;
     document.querySelector('#current-' + activePlayer).textContent = dice;
-    if (dice !=1)
+    if (dice != 1)
     {
-        
+        roundScore = roundScore + dice;
+    }
+    else
+    {
+    roundScore = dice;
     }
     // 2. Display the result
     // 3. Update the round score only if random number is not equal to 1
