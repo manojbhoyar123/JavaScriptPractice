@@ -16,7 +16,19 @@ document.querySelector('#current-' + activePlayer).textContent = dice; //*SETTER
 
 x = document.querySelector('#score-0').textContent; //*GETTER* since we get the value
 console.log(x);
-
 document.querySelector('.dice').style.display = 'none';
+function btn(){
+    console.log("buttonCalled");
+}
+//document.querySelector('.btn-roll').addEventListener('click',btn()); //simplest way
+//declaring function separately is risky, since other module may call it,
+//below method is anonymous method to call function and is safer.
+document.querySelector('.btn-roll').addEventListener('click', function() {
+    // 1. Random number
+    // 2. Display the result
+    // 3. Update the round score only if random number is not equal to 1
+    
+    console.log("buttonCalled ANONYNOUS function");
+});
 
 
