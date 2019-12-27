@@ -18,18 +18,26 @@ document.querySelector('.dice').style.display = 'none';
 //document.querySelector('.btn-roll').addEventListener('click',btn()); //simplest way
 //declaring function separately is risky, since other module may call it,
 //below method is anonymous method to call function and is safer.*/
-
+document.querySelector('.dice').style.display = 'none';
+//document.getElementById('score-0').style.display = 'none';
+document.getElementById('score-0').textContent = '0';
+document.getElementById('score-1').textContent = '0';
+document.getElementById('current-0').textContent = '0';
+document.getElementById('current-1').textContent = '0';
 document.querySelector('.btn-roll').addEventListener('click', function() {
-    // 1. Random number
+    /// 1. Random number
     var dice = Math.floor(Math.random() * 6) + 1;
     
-    // 2. Display the result
-    document.querySelector('.dice').style.display = 'block';
-    
+    /// 2. Display the result
+    // document.querySelector('.dice').style.display = 'block';
+    var diceDOM = document.querySelector('.dice');
+    diceDOM.style.display = 'block';  //just to make it visible
+
+    diceDOM.src = 'dice' + '-'+ dice + '.png';
     
     // 3. Update the round score only if random number is not equal to 1
     
-    //console.log(diceDOM.src);
+    console.log(diceDOM.src);
 });
 
 
