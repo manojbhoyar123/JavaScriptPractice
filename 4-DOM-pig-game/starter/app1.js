@@ -39,6 +39,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     if(dice !== 0)
     {
         roundScore = roundScore + dice;
+        document.querySelector('#current-' + activePlayer).textContent = roundScore;
     }
     else
     {
