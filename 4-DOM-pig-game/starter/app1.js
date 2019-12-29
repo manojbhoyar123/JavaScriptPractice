@@ -1,4 +1,4 @@
-var scores , roundScore , activePlayer  , dice2 , x;
+var scores, activePlayer, roundScore, dice2 , x;
 scores = [0,0];
 roundScore = 0;
 activePlayer = 0;
@@ -36,8 +36,16 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     diceDOM.src = 'dice' + '-'+ dice + '.png';
     
     // 3. Update the round score only if random number is not equal to 1
-    
+    if(dice !== 0)
+    {
+        roundScore = roundScore + dice;
+    }
+    else
+    {
+        //next player
+    }
     console.log(diceDOM.src);
+
 });
 
 
