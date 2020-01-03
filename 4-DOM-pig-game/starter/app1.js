@@ -61,10 +61,17 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.getElementById('.player-0-panel').classList.toggle('active');
         document.getElementById('.player-1-panel').classList.toggle('active');
         document.getElementById('.dice').style.display = 'none';
-
     }
-    console.log(diceDOM.src);
+});// roll event finished.
+    document.getElementById('.btn-hold').addEventListener("click",function(){
+        // add current score to global score
+        
+        // update the UI
+        // check if player won the game
+
+
+    });
  
-});
+
 
 
