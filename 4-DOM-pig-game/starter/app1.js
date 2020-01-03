@@ -57,9 +57,9 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.querySelector('.player-0-panel').classList.remove('active');
         document.querySelector('.player-1-panel').classList.add('active');
         */
-        document.querySelector('.player-0-panel').classList.toggle('active');
-        document.querySelector('.player-1-panel').classList.toggle('active');
-        document.querySelector('.dice').style.display = 'none';
+        document.getElementById('.player-0-panel').classList.toggle('active');
+        document.getElementById('.player-1-panel').classList.toggle('active');
+        document.getElementById('.dice').style.display = 'none';
 
     }
     console.log(diceDOM.src);
