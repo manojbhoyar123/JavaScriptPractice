@@ -24,7 +24,7 @@ document.getElementById('score-0').textContent = '0';
 document.getElementById('score-1').textContent = '0';
 document.getElementById('current-0').textContent = '0';
 document.getElementById('current-1').textContent = '0';
-//first call of event listener
+//first call of event listener for roll dice function
 document.querySelector('.btn-roll').addEventListener('click', function() {
     /// 1. Random number
     var dice = Math.floor(Math.random() * 6) + 1;
@@ -48,29 +48,47 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     else
     {
         //next player
-        activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
-        roundScore = 0;
+        //activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+        //roundScore = 0;
+        ///* below code will be replace by function
         // make current score to 0;
-        document.getElementById('current-0').textContent = '0';
-        document.getElementById('current-1').textContent = '0';
+        //document.getElementById('current-0').textContent = '0';
+       // document.getElementById('current-1').textContent = '0';
         // to play with active display panel
         /*
         document.querySelector('.player-0-panel').classList.remove('active');
         document.querySelector('.player-1-panel').classList.add('active');
         */
-        document.getElementById('.player-0-panel').classList.toggle('active');
-        document.getElementById('.player-1-panel').classList.toggle('active');
-        document.getElementById('.dice').style.display = 'none';
+       /*
+        document.querySelector('.player-0-panel').classList.toggle('active');
+        document.querySelector('.player-1-panel').classList.toggle('active');
+        document.querySelector('.dice').style.display = 'none';
+        */
+        nextPlayer();
+        
     }
 });// roll event finished.
-    document.getElementById('.btn-hold').addEventListener("click",function(){
+        document.querySelector('.btn-hold').addEventListener("click",function(){
         // add current score to global score
-        
+        scores[activePlayer]  +=  roundScore;
+        document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+        nextPlayer();
+
         // update the UI
         // check if player won the game
 
-
     });
+    function nextPlayer(){
+        activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+        roundScore = 0;
+        // make current score to 0;
+        document.getElementById('current-0').textContent = '0';
+        document.getElementById('current-1').textContent = '0';
+
+        document.querySelector('.player-0-panel').classList.toggle('active');
+        document.querySelector('.player-1-panel').classList.toggle('active');
+        document.querySelector('.dice').style.display = 'none';
+    }
  
 
 
